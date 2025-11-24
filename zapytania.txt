@@ -1,0 +1,12 @@
+SELECT`imie`, `nazwisko`, `klasa` FROM `uczniowie` WHERE `klasa`= '2B';
+
+SELECT COUNT(u1.id_ucznia) AS uczniowie_bez_alergii, COUNT(u2.id_ucznia) AS uczniowie_z_alergia FROM uczniowie u1 INNER JOIN uczniowie u2 ON u1.id_ucznia = u2.id_ucznia WHERE (u1.id_alergii IS NULL) AND (u2.id_ucznia IS NOT NULL);
+
+
+SELECT DISTINCT(imie), nazwisko, `klasa` FROM `uczniowie` u 
+INNER JOIN zamowienia z ON u.id_ucznia = z.id_ucznia 
+INNER JOIN posilki p ON z.id_posilku = p.id_posilku
+WHERE p.wegetarianski = 1;
+
+SELECT t.nazwa, COUNT(p.nazwa) AS liczba_posilkow  FROM `posilki` p INNER JOIN typy_posilkow t ON  p.id_typu = t.id_typu
+GROUP BY t.nazwa;

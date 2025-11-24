@@ -1,0 +1,59 @@
+*{
+    font-family:'Century', serif;
+}
+header{
+    justify-content: space-evenly;
+    justify-items: center;
+    display:flex;
+    
+}
+header img{
+    display:inline-block;
+}
+body{
+    margin:0px;
+    padding:0px;
+
+}
+header, footer{
+    background-color:#CCA10B;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+}
+footer{
+    clear:both;
+}
+#lewy, #prawy{
+    background-color: rgb(5, 160, 88);
+    
+}
+#lewy{
+    text-align: start;
+    width:70%;
+    height:620px;
+    float:left;
+
+}
+#prawy{
+    font-family: "LucidaConsole", "Consolas", "Courier New", monospace;
+    width:30%;
+    height:600px;
+    padding-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    float:right;
+
+
+}
+
+h1{
+    padding-left:30px;
+}
+.po_kliknieciu{
+    border-radius:8px;
+    border-color:black;
+    box-shadow: 10px 10px black 0.3;
+
+
+}
